@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <body>
+      <h1>注册表单</h1>
+      <p>请填写表单中的必填字段</p>
+      <form action="https://www.icoderoad.com">
+        <fieldset>
+          <label>用户名： <input type="text" required /></label>
+          <label>姓名： <input type="text" required /></label>
+          <label>邮箱： <input type="email" required /></label>
+          <label
+            >密码： <input type="password" required pattern="[a-z0-5]{8,}"
+          /></label>
+        </fieldset>
+        <fieldset>
+          <label><input type="radio" name="account-type" class="inline"/>个人帐户</label>
+          <label><input type="radio" name="account-type" class="inline"/>商业帐户</label>
+          <label
+            ><input type="checkbox" required name="terms" class="inline"/>我接受这些<a
+              href="https://www.icdoeroad.com/user/terms-of-service/"
+              >条款和条件</a
+            ></label
+          >
+        </fieldset>
+        <fieldset>
+          <label> 上传个人资料图片：<input type="file" name="file" /></label>
+          <label>
+            年龄（岁）：<input type="number" min="8" max="120" name="age"
+          /></label>
+          <label
+            >你是怎么知道我们的？
+            <select name="referrer">
+              <option value="">(请选择)</option>
+              <option value="1">公众号</option>
+              <option value="2">头条</option>
+              <option value="3">抖音</option>
+              <option value="4">其他</option>
+            </select>
+          </label>
+          <label
+            >个人简历：
+            <textarea
+              name="bio"
+              rows="3"
+              cols="30"
+              placeholder="我喜欢在沙滩上写代码..."
+            ></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" value="Submit" />
+      </form>
+    </body>
+  </body>
+</html>
